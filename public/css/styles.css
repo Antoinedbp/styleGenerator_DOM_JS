@@ -1,0 +1,33 @@
+*{
+    margin: 1%;
+}
+.monH1{
+    font-size: 3rem;
+}
+.monHr{
+    background-color: rgb(73, 73, 255);
+    height: 1px;
+
+}
+.btn1{
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+    margin-right: 1%;
+    border-radius: 5px;
+    margin: 7px;
+}
+.btn2{
+    width: 50px;
+    height: 40px;
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 5px;
+}
+.btn3{
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+    border-radius: 5px;
+}
