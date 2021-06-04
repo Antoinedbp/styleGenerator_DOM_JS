@@ -17,6 +17,7 @@
     margin-right: 1%;
     border-radius: 5px;
     margin: 7px;
+    cursor: pointer;
 }
 .btn2{
     width: 50px;
@@ -24,10 +25,51 @@
     margin-top: 12px;
     background-color: white;
     border-radius: 5px;
+    cursor: pointer;
+
 }
 .btn3{
     width: 50px;
     height: 50px;
     margin: 7px;
     border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+
+    cursor: pointer;
+
+}
+.ligne2{
+    display: flex;
+}
+.inputColor{
+    height: 35px;
+    width: 200px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+.btnBorder{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: 0.1rem solid lightgray;
+    cursor: pointer;
+}
+.ligne3{
+    display: flex;
+}
+.inputRadius{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: 0.2rem solid gray;
+    margin: 10px;
+}
+.monButton{
+    height: 40px;
+    width: 100px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
