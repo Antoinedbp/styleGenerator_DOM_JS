@@ -3,7 +3,7 @@ let btnBorder = document.getElementsByClassName("btn2");
 let btnSizeBorder = document.getElementsByClassName("btn3");
 let visuel = document.getElementsByClassName("visuel")[0];
 let visuelBorder;
-let paletteC = document.getElementsByClassName("inputColor");
+let paletteC = document.getElementsByClassName("inputColor")[0];
 let border2 = document.getElementsByClassName("btnBorder");
 let borderRadius = document.getElementsByClassName("inputRadius")
 let reset = document.querySelector(".monButton");
@@ -54,7 +54,9 @@ for (let i = 0; i < btnSizeBorder.length; i++) {
 /* -------------------------------------------------------------------------- */
 /*                      Event boutton Palette de couleur                      */
 /* -------------------------------------------------------------------------- */
-
+paletteC.addEventListener("change", () => {
+    visuel.style.backgroundColor = paletteC.value;
+})
 
 
 /* -------------------------------------------------------------------------- */
@@ -64,15 +66,15 @@ for (let i = 0; i < btnSizeBorder.length; i++) {
 for (let i = 0; i < border2.length; i++) {
     border2[i].addEventListener("click", () => {
         if (i == 0) {
-            visuel.style.border = "5px solid";
+            visuel.style.border = `${border2[i].value}px solid`;
         } else if(i == 1){
-           visuel.style.borderTop = "5px solid";
+           visuel.style.borderTop = `${border2[i].value}px solid`;
         } else if(i == 2){
-            visuel.style.borderRight = "5px solid";
+            visuel.style.borderRight = `${border2[i].value}px solid`;
         } else if(i == 3){
-            visuel.style.borderBottom = "5px solid";
+            visuel.style.borderBottom = `${border2[i].value}px solid`;
         } else{
-            visuel.style.borderLeft = "5px solid";
+            visuel.style.borderLeft = `${border2[i].value}px solid`;
         }
     })
     
@@ -86,15 +88,15 @@ for (let i = 0; i < border2.length; i++) {
 for (let i = 0; i < borderRadius.length; i++) {
     borderRadius[i].addEventListener("click", () => {
         if (i == 0) {
-            visuel.style.borderRadius = "15px";
+            visuel.style.borderRadius = `${borderRadius[i].value}px`;
         } else if(i == 1){
-            visuel.style.borderRadius = "15px 0px 0px 0px";
+            visuel.style.borderRadius = `${borderRadius[i].value}px`;
         }else if(i == 2){
-            visuel.style.borderRadius = "0px 15px 0px 0px";
+            visuel.style.borderRadius = `${borderRadius[i].value}px`;
         }else if(i == 3){
-            visuel.style.borderRadius = "0px 0px 15px 0px";
+            visuel.style.borderRadius = `${borderRadius[i].value}px`;
         } else if(i == 4){
-            visuel.style.borderRadius = "0px 0px 0px 15px";
+            visuel.style.borderRadius = `${borderRadius[i].value}px`;
         }
     })
     
@@ -107,4 +109,5 @@ reset.addEventListener("click", () => {
     visuel.style.border = "1px solid lightgray";
     visuel.style.backgroundColor = "white";
     visuel.style.borderRadius = "0px";
+    border2[i].value = "0";
 })
