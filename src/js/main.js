@@ -54,9 +54,9 @@ for (let i = 0; i < btnSizeBorder.length; i++) {
 /* -------------------------------------------------------------------------- */
 /*                      Event boutton Palette de couleur                      */
 /* -------------------------------------------------------------------------- */
-paletteC.addEventListener("change", () => {
+paletteC.addEventListener("input", () => {
     visuel.style.backgroundColor = paletteC.value;
-})
+});
 
 
 /* -------------------------------------------------------------------------- */
@@ -76,9 +76,8 @@ for (let i = 0; i < border2.length; i++) {
         } else{
             visuel.style.borderLeft = `${border2[i].value}px solid`;
         }
-    })
-    
-}
+    })   
+};
 
 
 /* -------------------------------------------------------------------------- */
@@ -90,13 +89,13 @@ for (let i = 0; i < borderRadius.length; i++) {
         if (i == 0) {
             visuel.style.borderRadius = `${borderRadius[i].value}px`;
         } else if(i == 1){
-            visuel.style.borderRadius = `${borderRadius[i].value}px`;
+            visuel.style.borderRadius = `${borderRadius[i].value}px 0px 0px 0px`;
         }else if(i == 2){
-            visuel.style.borderRadius = `${borderRadius[i].value}px`;
+            visuel.style.borderRadius = `0px ${borderRadius[i].value}px 0px 0px `;
         }else if(i == 3){
-            visuel.style.borderRadius = `${borderRadius[i].value}px`;
+            visuel.style.borderRadius = `0px 0px ${borderRadius[i].value}px 0px`;
         } else if(i == 4){
-            visuel.style.borderRadius = `${borderRadius[i].value}px`;
+            visuel.style.borderRadius = `0px 0px 0px ${borderRadius[i].value}px`;
         }
     })
     
